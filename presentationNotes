@@ -1,0 +1,109 @@
+ALL - names
+
+SMS - product - single-player continuous runner game, game for people of all ages on multiple platforms - web, android, ios
+
+
+SMS - tell you about game/vision
+	you're in a dream, trying to wake up
+	you will be forever in dream if ghosts catch you
+	only the clocks can wake you up
+	let the candles guide the way
+
+====================================================================
+
+
+JCL - play game
+
+DLN - create illusion of ghosts coming towards you
+	- background scrolls
+	- avoid ghosts that come at you from all angles
+	- collect clocks to get to the next level, could pop up anywhere
+	- collect candles if you get hit by a ghost (ghosts take away your candle)
+	- when hit, character flashes to signify temporary invincibility
+	- get points for collecting candles and clocks
+	- when the game ends, you can add yourself to the top 5 on leaderboard
+
+====================================================================
+
+JCL - tech stack
+	- phaser
+	- cocoon
+	- ajax
+	- node/express
+	- postgres
+	- gulp
+
+DLN - testing
+	- emulators, user testing
+
+====================================================================
+
+DLN - challenges/tasks
+	- persisting scores throughout level change
+	- accessing database from within game
+	- reporting final score with a username
+
+
+
+JCL - challenges/tasks
+	- mobile deployment/testing
+	- asset management
+	- state transitions
+	- responsive design - web/mobile
+	- gulp/build tools/git integration
+
+
+
+SMS - challenges/tasks
+	- arcade physics/sprite movement
+	- arcade physics/collision detection
+	- accouting for different screen/game sizes
+	- debugging within the game
+
+
+====================================================================
+
+SMS - closing and JCL - roll credits
+	-
+
+Presentation Notes - not part of actual presentation
+=================================================================
+
+project tasks -
+	compiling
+	asset management
+	scoring
+	music
+	fonts
+	user flow
+	collisions
+	collecting items
+	sprite physics
+	phaser debugging
+	pausing
+	gulp
+	deploying to app/play stores
+	fonts
+
+challenges -
+	this
+	compiling
+	bounding boxes
+	music
+	state management
+	templates
+	lives
+	persisting total score
+	invinsibility
+	sizing
+	fonts
+	minifying
+	gulp
+
+additional -
+	animation
+	inputs
+
+	stateful game logic
+	cross platform integration/compatibility
+	incorporate credits
