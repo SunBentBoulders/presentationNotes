@@ -1,16 +1,16 @@
-ALL - names
+SMS - Hi, my name is Shanna.
+JCL
+DLN
 
-SMS - product - single-player continuous runner game, game for people of all ages on multiple platforms - web, android, ios
+====== product intro ============
 
+SMS - We're here to introduce you to Dream Dash, which is a single-player continuous runner game for people of all ages on multiple platforms - web, android, and ios.
 
-SMS - tell you about game/vision
-	you're in a dream, trying to wake up
-	you will be forever in dream if ghosts catch you
-	only the clocks can wake you up
-	let the candles guide the way
+====== game vision ==============
 
-====================================================================
+SMS - Let me tell you about our vision for Dream Dash. Imagine that you're in a dream, trying to wake up. You will forever be in this dream if the ghosts catch you. Only the alarm clocks can wake you up. You must let the candles guide the way. With that vision in mind, ____ (Jazz or DL) will take you through the game itself.
 
+===== game demo ================================
 
 JCL - play game
 
@@ -36,7 +36,7 @@ JCL - tech stack
 DLN - testing
 	- emulators, user testing
 
-====================================================================
+==== challenges/tasks =====================================
 
 DLN - challenges/tasks
 	- persisting scores throughout level change
@@ -60,11 +60,20 @@ SMS - challenges/tasks
 	- accouting for different screen/game sizes
 	- debugging within the game
 
+SMS - Some of the challenges I encountered while building Dream Dash included sprite movement, collision detection, and accounting for different screen and game sizes. We were able to program the characters to move using physics-like qualities with help from a physics engine, but it was still tricky to create the illusion of perspective. Ultimately, we were able to accomplish this by using a combination of physics and tweening, which is a way of programming the 'in-between' motion of a character to give it the illusion of being in motion. Programming the collision detection, which is involved whenever the player collides or overlaps with another character, was also tricky to make precise enough so that it was conducive to a good user experience. In Dream Dash, we used what is called the 'box model', which means that each character has an invisible box around it or within it, which is what the collision detection listens for. Finally, since our goal was to make Dream Dash widely available, we had to figure out the most efficient way to make our game playable on a variety of screen sizes, which turns out is much trickier than just enabling full screen.
 
-====================================================================
 
-SMS - closing and JCL - roll credits
-	-
+======= closing/credits ==================
+JCL - roll credits
+
+SMS - That is an introduction to Dream Dash. Check us out in the app store, google play store, and online at playdreamdash.com. Thank you for listening, and we welcome any questions you have.
+
+
+
+
+
+
+
 
 Presentation Notes - not part of actual presentation
 =================================================================
