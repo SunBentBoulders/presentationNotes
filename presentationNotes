@@ -1,14 +1,14 @@
 SMS - Hi, my name is Shanna.
-JCL
+JCL - I'm Jazz *sly smile*.
 DLN
 
 ====== product intro ============
 
-SMS - We're here to introduce you to Dream Dash, which is a single-player continuous runner game for people of all ages on multiple platforms - web, android, and ios.
+SMS - We're here to introduce you to Dream Dash, a cross-platform single-player continuous runner game for people of all ages available on web, Android, and iOS..
 
 ====== game vision ==============
 
-SMS - Let me tell you about our vision for Dream Dash. Imagine that you're in a dream, trying to wake up. You will forever be in this dream if the ghosts catch you. Only the alarm clocks can wake you up. You must let the candles guide the way. With that vision in mind, ____ (Jazz or DL) will take you through the game itself.
+SMS - Our vision for Dream Dash imagine that you're in a dream trying to wake up. You'll continue to dream if the ghosts catch you, but the alarm clocks will wake you up and the candles will guide the way. With that vision in mind, I'll  take you through the game itself while Darryl explains what's happening in the gameplay.
 
 ===== game demo ================================
 
@@ -26,7 +26,7 @@ DLN - create illusion of ghosts coming towards you
 ====================================================================
 
 JCL
-Giving a high-level overview of our tech stack, to make our leaderboard go from concept to reality we used Ajax to get and post our top score user data and postgres to retain and store those scores in a database. We created a server with Express to make sure the game ran properly after deployed to the web and compiled our app for deployment to Android and iOS with CocoonJS, a compiler built on top of Cordova. Cocoon's available plugins enabled us to handle our game's audio and vibration requirements and other user interactions, ultimately turning our Javascript into native mobile code. After all of this, the glue that held it all together was developing our game with PhaserJS, a Javascript gaming library with a built-in physics engine that allowed us to create the full 60 fps(frames per second) Canvas+ experience of the game, its movement and transitions from scratch. Once created, we optimized our game with gulp, a build tool, that allowed us to compress the size for web and mobile once the project was complete.
+Giving a high-level overview of our tech stack, to make our leaderboard go from concept to reality we used postgres to retain and store user scores in a database. We created a server with Express to make sure the game ran properly after deployed to the web and compiled our app for deployment to Android and iOS with CocoonJS, a compiler built on top of Cordova with available plugins to handle our game's audio and vibration requirements, ultimately turning our Javascript into native mobile code. After all of this, the glue that held it all together was developing our game with PhaserJS, a Javascript gaming library with built-in physics. Once created, we optimized and compress our game with build tools.
 
     - tech stack
 	- phaser
@@ -76,7 +76,7 @@ SMS - Some of the challenges I encountered while building Dream Dash included sp
 ======= closing/credits ==================
 JCL - roll credits
 
-SMS - That is an introduction to Dream Dash. Check us out in the app store, google play store, and online at playdreamdash.com. Thank you for listening, and we welcome any questions you have.
+SMS - That is an introduction to Dream Dash. Check us out in the app store, google play store, and online at playdreamdash.com. Thanks for listening, and now we'd like to open up the floor for questions.
 
 
 
