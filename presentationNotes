@@ -21,11 +21,14 @@ DLN - create illusion of ghosts coming towards you
 	- collect candles if you get hit by a ghost (ghosts take away your candle)
 	- when hit, character flashes to signify temporary invincibility
 	- get points for collecting candles and clocks
-	- when the game ends, you can add yourself to the top 5 on leaderboard
+	- when the game ends, users can add themselves to the top 5 on leaderboard
 
 ====================================================================
 
-JCL - tech stack
+JCL
+Giving a high-level overview of our tech stack, to make our leaderboard go from concept to reality we used Ajax to get and post our top score user data and postgres to retain and store those scores in a database. We created a server with Express to make sure the game ran properly after deployed to the web and compiled our app for deployment to Android and iOS with CocoonJS, a compiler built on top of Cordova. Cocoon's available plugins enabled us to handle our game's audio and vibration requirements and other user interactions, ultimately turning our Javascript into native mobile code. After all of this, the glue that held it all together was developing our game with PhaserJS, a Javascript gaming library with a built-in physics engine that allowed us to create the full 60 fps(frames per second) Canvas+ experience of the game, its movement and transitions from scratch. Once created, we optimized our game with gulp, a build tool, that allowed us to compress the size for web and mobile once the project was complete.
+
+    - tech stack
 	- phaser
 	- cocoon
 	- ajax
@@ -45,7 +48,10 @@ DLN - challenges/tasks
 
 
 
-JCL - challenges/tasks
+JCL 
+Every challenge can be overcome, but it can never be surpassed without difficulty. Some challenges I faced working on this project included managing the game state transitions between directions to menu, the game and onward, integrating a responsive design for the web app version of the game for view on either computer or mobile, asset management for different sized devices and services requiring unminified versions of our files, optimizing our application and git workflow with gulp to build and compress the size down for all anticipated possibilities and Android deployment and testing.
+
+    - challenges/tasks
 	- mobile deployment/testing
 	- asset management
 	- state transitions
