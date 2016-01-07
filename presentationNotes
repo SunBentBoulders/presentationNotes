@@ -38,6 +38,8 @@ Giving a high-level overview of our tech stack, to make our leaderboard go from 
 
 DLN - testing
 	- emulators, user testing
+	
+	As this is a multiplatform application - we wanted to test out our game on each device. This process included using coocoonjs as a compiling tool and user testing the game in its native environment. We also used emulators such as the ones provided by apple and google. For our web code, we used jasmine as a testing suite for our code.
 
 ==== challenges/tasks =====================================
 
@@ -45,6 +47,8 @@ DLN - challenges/tasks
 	- persisting scores throughout level change
 	- accessing database from within game
 	- reporting final score with a username
+	
+Some of the challenges I experienced working on dream dash began with implementing a scoring system. In efforts of keeping a persistant log of the player score throughout levels and game state transitions, the score had to be designed in a way that would utilize your devices local storage to make this successful. With the completion of that feature, we wanted to create a way for user highscores to be displayed on a leaderboard. The challenge involved with this feature was creating a client side call to the server to the database from inside the game and posting the score, then fetching the highscores and have them render inside the game
 
 
 
