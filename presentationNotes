@@ -1,76 +1,36 @@
 SMS - Hi, my name is Shanna.
 JCL - I'm Jazz *sly smile*.
-DLN
+DLN - I'm Darryl.
 
 ====== product intro ============
 
-SMS - We're here to introduce you to Dream Dash, a cross-platform single-player continuous runner game for people of all ages available on web, Android, and iOS..
+SMS - We're here to introduce you to Dream Dash, a cross-platform, single-player, continuous-runner game for people of all ages available on web, Android, and iOS.
 
 ====== game vision ==============
 
-SMS - Our vision for Dream Dash imagine that you're in a dream trying to wake up. You'll continue to dream if the ghosts catch you, but the alarm clocks will wake you up and the candles will guide the way. With that vision in mind, I'll  take you through the game itself while Darryl explains what's happening in the gameplay.
+JCL - Our vision for Dream Dash imagine that you're in a dream trying to wake up. You'll continue to dream if the ghosts catch you, but the alarm clocks will wake you up and the candles will guide the way. With that vision in mind, I'll  take you through the game itself while Darryl explains what's happening in the gameplay.
 
 ===== game demo ================================
 
 JCL - play game
 
-DLN - create illusion of ghosts coming towards you
-	- background scrolls
-	- avoid ghosts that come at you from all angles
-	- collect clocks to get to the next level, could pop up anywhere
-	- collect candles if you get hit by a ghost (ghosts take away your candle)
-	- when hit, character flashes to signify temporary invincibility
-	- get points for collecting candles and clocks
-	- when the game ends, users can add themselves to the top 5 on leaderboard
+DLN - As a player begins the game, you will notice an abundance of ghosts coming at you from the horizon. Using the game controls, tapping left or right will aid you in dodging the ghosts and preserving your candles. As you can see there are also clocks floating towards you. The clocks are there for collecting and leveling up. The candles are there to support as a life bar. Run out of candles, and the game is over. On game over, users are then brought to a end-game state where they can opt to add their names to the leaderboard. Ill now hand it over to Jazz to talk about our tech stack.
 
-====================================================================
+======= tech stack ==========================================
 
-JCL
-Giving a high-level overview of our tech stack, to make our leaderboard go from concept to reality we used postgres to retain and store user scores in a database. We created a server with Express to make sure the game ran properly after deployed to the web and compiled our app for deployment to Android and iOS with CocoonJS, a compiler built on top of Cordova with available plugins to handle our game's audio and vibration requirements, ultimately turning our Javascript into native mobile code. After all of this, the glue that held it all together was developing our game with PhaserJS, a Javascript gaming library with built-in physics. Once created, we optimized and compress our game with build tools.
+JCL - Giving a high-level overview of our tech stack, to make our leaderboard go from concept to reality we used postgres to retain and store user scores in a database. We created a server with Express to make sure the game ran properly after deployed to the web and compiled our app for deployment to Android and iOS with CocoonJS, a compiler built on top of Cordova with available plugins to handle our game's audio and vibration requirements, ultimately turning our Javascript into native mobile code. After all of this, the glue that held it all together was developing our game with PhaserJS, a Javascript gaming library with built-in physics. Once created, we optimized and compress our game with build tools. Darryl will tell a little more about our testing tools.
 
-    - tech stack
-	- phaser
-	- cocoon
-	- ajax
-	- node/express
-	- postgres
-	- gulp
+===== testing ======================================
 
-DLN - testing
-	- emulators, user testing
-	
-	As this is a multiplatform application - we wanted to test out our game on each device. This process included using coocoonjs as a compiling tool and user testing the game in its native environment. We also used emulators such as the ones provided by apple and google. For our web code, we used jasmine as a testing suite for our code.
+DLN - As this is a multiplatform application - we wanted to test out our game on each device. This process included using coocoonjs as a compiling tool and user testing the game in its native environment. We also used emulators such as the ones provided by apple and google. For our web code, we used jasmine as a testing suite for our code.
 
 ==== challenges/tasks =====================================
 
-DLN - challenges/tasks
-	- persisting scores throughout level change
-	- accessing database from within game
-	- reporting final score with a username
-	
-Some of the challenges I experienced working on dream dash began with implementing a scoring system. In efforts of keeping a persistant log of the player score throughout levels and game state transitions, the score had to be designed in a way that would utilize your devices local storage to make this successful. With the completion of that feature, we wanted to create a way for user highscores to be displayed on a leaderboard. The challenge involved with this feature was creating a client side call to the server to the database from inside the game and posting the score, then fetching the highscores and have them render inside the game
+DLN - Some of the challenges I experienced working on dream dash began with implementing a scoring system. In efforts of keeping a persistant log of the player score throughout levels and game state transitions, the score had to be designed in a way that would utilize your devices local storage to make this successful. With the completion of that feature, we wanted to create a way for user highscores to be displayed on a leaderboard. The challenge involved with this feature was creating a client side call to the server to the database from inside the game and posting the score, then fetching the highscores and have them render inside the game
 
+JCL - Every challenge can be overcome, but it can never be surpassed without difficulty. Some challenges I faced working on this project included managing the game state transitions between directions to menu, the game and onward, integrating a responsive design for the web app version of the game for view on either computer or mobile, asset management for different sized devices and services requiring unminified versions of our files, optimizing our application and git workflow with gulp to build and compress the size down for all anticipated possibilities and Android deployment and testing.
 
-
-JCL 
-Every challenge can be overcome, but it can never be surpassed without difficulty. Some challenges I faced working on this project included managing the game state transitions between directions to menu, the game and onward, integrating a responsive design for the web app version of the game for view on either computer or mobile, asset management for different sized devices and services requiring unminified versions of our files, optimizing our application and git workflow with gulp to build and compress the size down for all anticipated possibilities and Android deployment and testing.
-
-    - challenges/tasks
-	- mobile deployment/testing
-	- asset management
-	- state transitions
-	- responsive design - web/mobile
-	- gulp/build tools/git integration
-
-
-
-SMS - challenges/tasks
-	- arcade physics/sprite movement
-	- arcade physics/collision detection
-	- accouting for different screen/game sizes
-	- debugging within the game
-
-SMS - Some of the challenges I encountered while building Dream Dash included sprite movement, collision detection, and accounting for different screen and game sizes. We were able to program the characters to move using physics-like qualities with help from a physics engine, but it was still tricky to create the illusion of perspective. Ultimately, we were able to accomplish this by using a combination of physics and tweening, which is a way of programming the 'in-between' motion of a character to give it the illusion of being in motion. Programming the collision detection, which is involved whenever the player collides or overlaps with another character, was also tricky to make precise enough so that it was conducive to a good user experience. In Dream Dash, we used what is called the 'box model', which means that each character has an invisible box around it or within it, which is what the collision detection listens for. Finally, since our goal was to make Dream Dash widely available, we had to figure out the most efficient way to make our game playable on a variety of screen sizes, which turns out is much trickier than just enabling full screen.
+SMS - I encountered challenges when we were programming character movement, implementing collision detection, and figuring out how to account for different screen sizes. We programmed the characters to move using physics-like qualities with help from the physics engine, but it was still tricky to create the illusion of perspective for the ghosts, clocks, and candles. Ultimately, we used a combination of physics and tweening, which is a way of programming the 'in-between' motion of a character to give it the illusion of being in motion. Programming the collision detection (involved whenever the player collides or overlaps with another character), was also tricky to make precise enough so that it was conducive to a good user experience. We used what is called the 'box model', meaning that each character has an invisible box around it or within it, which is what the collision detection listens for.
 
 
 ======= closing/credits ==================
